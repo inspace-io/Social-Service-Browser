@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		513EA03551EF34D6E1E20148 /* Pods_Social_Service_Browser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337443322ABBADEA59E68BD /* Pods_Social_Service_Browser.framework */; };
+		D20250671F7539A400B96A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250661F7539A400B96A97 /* AppDelegate.swift */; };
+		D20250691F7539A400B96A97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250681F7539A400B96A97 /* ViewController.swift */; };
+		D202506C1F7539A400B96A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D202506A1F7539A400B96A97 /* Main.storyboard */; };
+		D202506E1F7539A400B96A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D202506D1F7539A400B96A97 /* Assets.xcassets */; };
+		D20250711F7539A400B96A97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D202506F1F7539A400B96A97 /* LaunchScreen.storyboard */; };
+		D29089EB1F83C3800009899F /* SocialServiceBrowserFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D29089E91F83C3800009899F /* SocialServiceBrowserFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D29089EE1F83C3800009899F /* SocialServiceBrowserFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */; };
+		D29089EF1F83C3800009899F /* SocialServiceBrowserFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D29089F41F83C3910009899F /* SocialServiceBrowserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29089DE1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.swift */; };
+		D29089F51F83C3910009899F /* SocialServiceBrowserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202507F1F753FF100B96A97 /* SocialServiceBrowserResult.swift */; };
+		D29089F61F83C3910009899F /* SocialServiceBrowserOperationPerformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202507B1F753D2A00B96A97 /* SocialServiceBrowserOperationPerformable.swift */; };
+		D29089F71F83C3910009899F /* SocialServiceBrowserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250791F753C9100B96A97 /* SocialServiceBrowserClient.swift */; };
+		D29089F81F83C3910009899F /* UIImageView+SocialServiceBrowserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2775B001F7BDCDB00E2AD1E /* UIImageView+SocialServiceBrowserClient.swift */; };
+		D29089F91F83C3910009899F /* SocialServiceBrowserGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2775AF41F7BB5AD00E2AD1E /* SocialServiceBrowserGridCollectionViewCell.swift */; };
+		D29089FA1F83C3910009899F /* SocialServiceBrowserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2775AFD1F7BB9FB00E2AD1E /* SocialServiceBrowserConfigurator.swift */; };
+		D29089FB1F83C3910009899F /* SocialServiceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250811F75524600B96A97 /* SocialServiceBrowserViewController.swift */; };
+		D29089FC1F83C3910009899F /* SocialServiceBrowserCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2775AF81F7BB63800E2AD1E /* SocialServiceBrowserCollectionReusableView.swift */; };
+		D29089FD1F83C3910009899F /* SocialServiceBrowerNodeListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202507D1F753D9800B96A97 /* SocialServiceBrowerNodeListResponse.swift */; };
+		D29089FE1F83C3C40009899F /* SocialServiceBrowserGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2775AF51F7BB5AD00E2AD1E /* SocialServiceBrowserGridCollectionViewCell.xib */; };
+		D29089FF1F83C3C80009899F /* SocialServiceBrowserCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2775AF91F7BB63800E2AD1E /* SocialServiceBrowserCollectionReusableView.xib */; };
+		D2908A001F83C3CB0009899F /* SocialServiceBrowserListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29089DF1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.xib */; };
+		D2908A011F83C3CE0009899F /* SocialServiceBrowserMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2775AFC1F7BB69000E2AD1E /* SocialServiceBrowserMedia.xcassets */; };
+		D2A43EE91F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A43EE81F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D29089EC1F83C3800009899F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D202505B1F7539A400B96A97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D29089E61F83C3800009899F;
+			remoteInfo = SocialServiceBrowserFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D29089F31F83C3800009899F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D29089EF1F83C3800009899F /* SocialServiceBrowserFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		157326BA0E6F8B7893ED5213 /* Pods-Social Service Browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Service Browser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser.debug.xcconfig"; sourceTree = "<group>"; };
+		1CB4B3373133FAED45A8D0B0 /* Pods-Social Service Browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Service Browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser.release.xcconfig"; sourceTree = "<group>"; };
+		C337443322ABBADEA59E68BD /* Pods_Social_Service_Browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_Service_Browser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20250631F7539A400B96A97 /* Social Service Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Service Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20250661F7539A400B96A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D20250681F7539A400B96A97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D202506B1F7539A400B96A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D202506D1F7539A400B96A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D20250701F7539A400B96A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D20250721F7539A400B96A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20250791F753C9100B96A97 /* SocialServiceBrowserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserClient.swift; sourceTree = "<group>"; };
+		D202507B1F753D2A00B96A97 /* SocialServiceBrowserOperationPerformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserOperationPerformable.swift; sourceTree = "<group>"; };
+		D202507D1F753D9800B96A97 /* SocialServiceBrowerNodeListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowerNodeListResponse.swift; sourceTree = "<group>"; };
+		D202507F1F753FF100B96A97 /* SocialServiceBrowserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserResult.swift; sourceTree = "<group>"; };
+		D20250811F75524600B96A97 /* SocialServiceBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserViewController.swift; sourceTree = "<group>"; };
+		D2775AF41F7BB5AD00E2AD1E /* SocialServiceBrowserGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2775AF51F7BB5AD00E2AD1E /* SocialServiceBrowserGridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialServiceBrowserGridCollectionViewCell.xib; sourceTree = "<group>"; };
+		D2775AF81F7BB63800E2AD1E /* SocialServiceBrowserCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserCollectionReusableView.swift; sourceTree = "<group>"; };
+		D2775AF91F7BB63800E2AD1E /* SocialServiceBrowserCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialServiceBrowserCollectionReusableView.xib; sourceTree = "<group>"; };
+		D2775AFC1F7BB69000E2AD1E /* SocialServiceBrowserMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SocialServiceBrowserMedia.xcassets; sourceTree = "<group>"; };
+		D2775AFD1F7BB9FB00E2AD1E /* SocialServiceBrowserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserConfigurator.swift; sourceTree = "<group>"; };
+		D2775B001F7BDCDB00E2AD1E /* UIImageView+SocialServiceBrowserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SocialServiceBrowserClient.swift"; sourceTree = "<group>"; };
+		D29089DE1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D29089DF1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialServiceBrowserListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocialServiceBrowserFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29089E91F83C3800009899F /* SocialServiceBrowserFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialServiceBrowserFramework.h; sourceTree = "<group>"; };
+		D29089EA1F83C3800009899F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A43EE81F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserDropboxClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D20250601F7539A400B96A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513EA03551EF34D6E1E20148 /* Pods_Social_Service_Browser.framework in Frameworks */,
+				D29089EE1F83C3800009899F /* SocialServiceBrowserFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29089E31F83C3800009899F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FBA8E91A20285345B6541CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				157326BA0E6F8B7893ED5213 /* Pods-Social Service Browser.debug.xcconfig */,
+				1CB4B3373133FAED45A8D0B0 /* Pods-Social Service Browser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4219E2490F7A920A6442FE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C337443322ABBADEA59E68BD /* Pods_Social_Service_Browser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D202505A1F7539A400B96A97 = {
+			isa = PBXGroup;
+			children = (
+				D2A8FDE41F84E09D00D44C3D /* Sources */,
+				D29089E81F83C3800009899F /* SocialServiceBrowserFramework */,
+				D20250781F7539BD00B96A97 /* Social Service Browser */,
+				D20250651F7539A400B96A97 /* Social Service Browser Example */,
+				D20250641F7539A400B96A97 /* Products */,
+				3FBA8E91A20285345B6541CD /* Pods */,
+				B4219E2490F7A920A6442FE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D20250641F7539A400B96A97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D20250631F7539A400B96A97 /* Social Service Browser.app */,
+				D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D20250651F7539A400B96A97 /* Social Service Browser Example */ = {
+			isa = PBXGroup;
+			children = (
+				D20250661F7539A400B96A97 /* AppDelegate.swift */,
+				D20250681F7539A400B96A97 /* ViewController.swift */,
+				D202506A1F7539A400B96A97 /* Main.storyboard */,
+				D202506D1F7539A400B96A97 /* Assets.xcassets */,
+				D202506F1F7539A400B96A97 /* LaunchScreen.storyboard */,
+				D20250721F7539A400B96A97 /* Info.plist */,
+			);
+			path = "Social Service Browser Example";
+			sourceTree = "<group>";
+		};
+		D20250781F7539BD00B96A97 /* Social Service Browser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Social Service Browser";
+			sourceTree = "<group>";
+		};
+		D29089E81F83C3800009899F /* SocialServiceBrowserFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D29089E91F83C3800009899F /* SocialServiceBrowserFramework.h */,
+				D29089EA1F83C3800009899F /* Info.plist */,
+			);
+			path = SocialServiceBrowserFramework;
+			sourceTree = "<group>";
+		};
+		D2A8FDE41F84E09D00D44C3D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8FDE51F84E13200D44C3D /* Clients */,
+				D2775AFC1F7BB69000E2AD1E /* SocialServiceBrowserMedia.xcassets */,
+				D20250791F753C9100B96A97 /* SocialServiceBrowserClient.swift */,
+				D202507B1F753D2A00B96A97 /* SocialServiceBrowserOperationPerformable.swift */,
+				D202507D1F753D9800B96A97 /* SocialServiceBrowerNodeListResponse.swift */,
+				D202507F1F753FF100B96A97 /* SocialServiceBrowserResult.swift */,
+				D20250811F75524600B96A97 /* SocialServiceBrowserViewController.swift */,
+				D2775AF41F7BB5AD00E2AD1E /* SocialServiceBrowserGridCollectionViewCell.swift */,
+				D2775AF51F7BB5AD00E2AD1E /* SocialServiceBrowserGridCollectionViewCell.xib */,
+				D2775AF81F7BB63800E2AD1E /* SocialServiceBrowserCollectionReusableView.swift */,
+				D2775AF91F7BB63800E2AD1E /* SocialServiceBrowserCollectionReusableView.xib */,
+				D29089DE1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.swift */,
+				D29089DF1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.xib */,
+				D2775AFD1F7BB9FB00E2AD1E /* SocialServiceBrowserConfigurator.swift */,
+				D2775B001F7BDCDB00E2AD1E /* UIImageView+SocialServiceBrowserClient.swift */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		D2A8FDE51F84E13200D44C3D /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				D2A43EE81F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D29089E41F83C3800009899F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29089EB1F83C3800009899F /* SocialServiceBrowserFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D20250621F7539A400B96A97 /* Social Service Browser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20250751F7539A400B96A97 /* Build configuration list for PBXNativeTarget "Social Service Browser" */;
+			buildPhases = (
+				B9247FF085E7B2C27500A904 /* [CP] Check Pods Manifest.lock */,
+				D202505F1F7539A400B96A97 /* Sources */,
+				D20250601F7539A400B96A97 /* Frameworks */,
+				D20250611F7539A400B96A97 /* Resources */,
+				CD4ECC540007F0C8EDDB03E7 /* [CP] Embed Pods Frameworks */,
+				7019945444DB436CA25E54B6 /* [CP] Copy Pods Resources */,
+				D29089F31F83C3800009899F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D29089ED1F83C3800009899F /* PBXTargetDependency */,
+			);
+			name = "Social Service Browser";
+			productName = "Social Service Browser";
+			productReference = D20250631F7539A400B96A97 /* Social Service Browser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D29089E61F83C3800009899F /* SocialServiceBrowserFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29089F01F83C3800009899F /* Build configuration list for PBXNativeTarget "SocialServiceBrowserFramework" */;
+			buildPhases = (
+				D29089E21F83C3800009899F /* Sources */,
+				D29089E31F83C3800009899F /* Frameworks */,
+				D29089E41F83C3800009899F /* Headers */,
+				D29089E51F83C3800009899F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialServiceBrowserFramework;
+			productName = SocialServiceBrowserFramework;
+			productReference = D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D202505B1F7539A400B96A97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Inspace;
+				TargetAttributes = {
+					D20250621F7539A400B96A97 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					D29089E61F83C3800009899F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D202505E1F7539A400B96A97 /* Build configuration list for PBXProject "Social Service Browser" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D202505A1F7539A400B96A97;
+			productRefGroup = D20250641F7539A400B96A97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D20250621F7539A400B96A97 /* Social Service Browser */,
+				D29089E61F83C3800009899F /* SocialServiceBrowserFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D20250611F7539A400B96A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20250711F7539A400B96A97 /* LaunchScreen.storyboard in Resources */,
+				D202506E1F7539A400B96A97 /* Assets.xcassets in Resources */,
+				D202506C1F7539A400B96A97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29089E51F83C3800009899F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2908A001F83C3CB0009899F /* SocialServiceBrowserListCollectionViewCell.xib in Resources */,
+				D29089FE1F83C3C40009899F /* SocialServiceBrowserGridCollectionViewCell.xib in Resources */,
+				D2908A011F83C3CE0009899F /* SocialServiceBrowserMedia.xcassets in Resources */,
+				D29089FF1F83C3C80009899F /* SocialServiceBrowserCollectionReusableView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7019945444DB436CA25E54B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9247FF085E7B2C27500A904 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Social Service Browser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD4ECC540007F0C8EDDB03E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyDropbox/SwiftyDropbox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyDropbox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D202505F1F7539A400B96A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20250691F7539A400B96A97 /* ViewController.swift in Sources */,
+				D20250671F7539A400B96A97 /* AppDelegate.swift in Sources */,
+				D2A43EE91F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29089E21F83C3800009899F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29089FA1F83C3910009899F /* SocialServiceBrowserConfigurator.swift in Sources */,
+				D29089F71F83C3910009899F /* SocialServiceBrowserClient.swift in Sources */,
+				D29089FB1F83C3910009899F /* SocialServiceBrowserViewController.swift in Sources */,
+				D29089F51F83C3910009899F /* SocialServiceBrowserResult.swift in Sources */,
+				D29089FC1F83C3910009899F /* SocialServiceBrowserCollectionReusableView.swift in Sources */,
+				D29089F81F83C3910009899F /* UIImageView+SocialServiceBrowserClient.swift in Sources */,
+				D29089F41F83C3910009899F /* SocialServiceBrowserListCollectionViewCell.swift in Sources */,
+				D29089F91F83C3910009899F /* SocialServiceBrowserGridCollectionViewCell.swift in Sources */,
+				D29089FD1F83C3910009899F /* SocialServiceBrowerNodeListResponse.swift in Sources */,
+				D29089F61F83C3910009899F /* SocialServiceBrowserOperationPerformable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D29089ED1F83C3800009899F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D29089E61F83C3800009899F /* SocialServiceBrowserFramework */;
+			targetProxy = D29089EC1F83C3800009899F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D202506A1F7539A400B96A97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D202506B1F7539A400B96A97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D202506F1F7539A400B96A97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D20250701F7539A400B96A97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D20250731F7539A400B96A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D20250741F7539A400B96A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D20250761F7539A400B96A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 157326BA0E6F8B7893ED5213 /* Pods-Social Service Browser.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6PMVPLSF;
+				INFOPLIST_FILE = "$(SRCROOT)/Social Service Browser Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.inspace.Social-Service-Browser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D20250771F7539A400B96A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB4B3373133FAED45A8D0B0 /* Pods-Social Service Browser.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6PMVPLSF;
+				INFOPLIST_FILE = "$(SRCROOT)/Social Service Browser Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.inspace.Social-Service-Browser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D29089F11F83C3800009899F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3G6PMVPLSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SocialServiceBrowserFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.inspace.SocialServiceBrowserFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D29089F21F83C3800009899F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3G6PMVPLSF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SocialServiceBrowserFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.inspace.SocialServiceBrowserFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D202505E1F7539A400B96A97 /* Build configuration list for PBXProject "Social Service Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20250731F7539A400B96A97 /* Debug */,
+				D20250741F7539A400B96A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20250751F7539A400B96A97 /* Build configuration list for PBXNativeTarget "Social Service Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20250761F7539A400B96A97 /* Debug */,
+				D20250771F7539A400B96A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29089F01F83C3800009899F /* Build configuration list for PBXNativeTarget "SocialServiceBrowserFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29089F11F83C3800009899F /* Debug */,
+				D29089F21F83C3800009899F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D202505B1F7539A400B96A97 /* Project object */;
+}

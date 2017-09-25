@@ -1,0 +1,32 @@
+included: # paths to include during linting. `--path` is ignored if present.
+  - ../Sources
+excluded:
+  - Pods
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - todo
+  - force_cast
+  - nesting
+  - empty_enum_arguments
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 50
+    error: 60
+  excluded: iPhone # excluded via string
+line_length: 250
+type_body_length:
+  - 200 # warning
+  - 250 # error
+file_length:
+  warning: 400
+  error: 600
+identifier_name:
+  min_length: 3
+  max_length:
+    warning: 50
+    error: 60
+  excluded: # excluded via string array
+    - id
+    - x
+    - y

@@ -1,0 +1,6 @@
+framework module Pods_Social_Service_Browser {
+  umbrella header "Pods-Social Service Browser-umbrella.h"
+
+  export *
+  module * { export * }
+}

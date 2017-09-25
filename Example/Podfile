@@ -1,0 +1,7 @@
+platform :ios, "9.0"
+
+target "Social Service Browser" do
+pod "SwiftyDropbox"
+end
+
+use_frameworks!
