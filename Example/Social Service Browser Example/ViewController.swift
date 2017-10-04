@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             return
         }
         
-        let configuration = SocialServiceBrowserConfigurator(client: SocialServiceBrowserDropboxClient())
+        let configuration = SocialServiceBrowserConfigurator(client: SocialServiceBrowserDropboxClient(), selectionMode: .select)
         let viewController = SocialServiceBrowserViewController(configuration: configuration, uiConfiguration: configuration)
         viewController.delegate = self
         present(UINavigationController(rootViewController: viewController), animated: true, completion: nil)

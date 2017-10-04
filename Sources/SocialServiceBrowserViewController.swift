@@ -54,9 +54,9 @@ public class SocialServiceBrowserViewController: UICollectionViewController {
     public var parentNode: SocialServiceBrowerNode? {
         return configuration.parentNode
     }
-    public private(set) var fileNodes: [SocialServiceBrowerNode] = []
-    public private(set) var directoryNodes: [SocialServiceBrowerNode] = []
-    public private(set) var selectedFiles: [SocialServiceBrowerNode] = []
+    public fileprivate(set) var fileNodes: [SocialServiceBrowerNode] = []
+    public fileprivate(set) var directoryNodes: [SocialServiceBrowerNode] = []
+    public fileprivate(set) var selectedFiles: [SocialServiceBrowerNode] = []
     
     private var cancelledLoadingOperations: Bool = false
     
