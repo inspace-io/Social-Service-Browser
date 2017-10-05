@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyDropbox
-import SocialServiceBrowserFramework
+import SocialServiceBrowser
 
 class ViewController: UIViewController {
 

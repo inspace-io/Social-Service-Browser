@@ -9,7 +9,10 @@
 import Foundation
 import SwiftyDropbox
 import Alamofire
-import SocialServiceBrowserFramework
+
+#if IMPORT_SOCIAL_BROWSER_FRAMEWORK
+import SocialServiceBrowser
+#endif
 
 extension Alamofire.Request: SocialServiceBrowserOperationPerformable {
     public func run() {
