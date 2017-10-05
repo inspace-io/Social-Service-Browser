@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		513EA03551EF34D6E1E20148 /* Pods_Social_Service_Browser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337443322ABBADEA59E68BD /* Pods_Social_Service_Browser.framework */; };
+		22BF0C27709D35F0D1083C4D /* Pods_Social_Service_Browser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337443322ABBADEA59E68BD /* Pods_Social_Service_Browser.framework */; };
 		D20250671F7539A400B96A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250661F7539A400B96A97 /* AppDelegate.swift */; };
 		D20250691F7539A400B96A97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20250681F7539A400B96A97 /* ViewController.swift */; };
 		D202506C1F7539A400B96A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D202506A1F7539A400B96A97 /* Main.storyboard */; };
 		D202506E1F7539A400B96A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D202506D1F7539A400B96A97 /* Assets.xcassets */; };
 		D20250711F7539A400B96A97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D202506F1F7539A400B96A97 /* LaunchScreen.storyboard */; };
+		D20E2D331F867EBE00D7FF28 /* SocialServiceBrowserDropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A43EE81F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift */; };
 		D29089EB1F83C3800009899F /* SocialServiceBrowserFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D29089E91F83C3800009899F /* SocialServiceBrowserFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29089EE1F83C3800009899F /* SocialServiceBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29089E71F83C3800009899F /* SocialServiceBrowser.framework */; };
 		D29089EF1F83C3800009899F /* SocialServiceBrowser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D29089E71F83C3800009899F /* SocialServiceBrowser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -30,7 +31,6 @@
 		D29089FF1F83C3C80009899F /* SocialServiceBrowserCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2775AF91F7BB63800E2AD1E /* SocialServiceBrowserCollectionReusableView.xib */; };
 		D2908A001F83C3CB0009899F /* SocialServiceBrowserListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29089DF1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.xib */; };
 		D2908A011F83C3CE0009899F /* SocialServiceBrowserMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2775AFC1F7BB69000E2AD1E /* SocialServiceBrowserMedia.xcassets */; };
-		D2A43EE91F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A43EE81F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		157326BA0E6F8B7893ED5213 /* Pods-Social Service Browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Service Browser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser.debug.xcconfig"; sourceTree = "<group>"; };
-		1CB4B3373133FAED45A8D0B0 /* Pods-Social Service Browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Service Browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser.release.xcconfig"; sourceTree = "<group>"; };
+		0F14FA7A423670497525D791 /* Pods_SocialServiceBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialServiceBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EDC36119247014E0CC787C /* Pods-Social Service Browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Service Browser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser.debug.xcconfig"; sourceTree = "<group>"; };
 		C337443322ABBADEA59E68BD /* Pods_Social_Service_Browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_Service_Browser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20250631F7539A400B96A97 /* Social Service Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Service Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20250661F7539A400B96A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +86,7 @@
 		D29089E91F83C3800009899F /* SocialServiceBrowserFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialServiceBrowserFramework.h; sourceTree = "<group>"; };
 		D29089EA1F83C3800009899F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A43EE81F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserDropboxClient.swift; sourceTree = "<group>"; };
+		F2DAF289F6556F8BE271A8A2 /* Pods-Social Service Browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Service Browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513EA03551EF34D6E1E20148 /* Pods_Social_Service_Browser.framework in Frameworks */,
 				D29089EE1F83C3800009899F /* SocialServiceBrowser.framework in Frameworks */,
+				22BF0C27709D35F0D1083C4D /* Pods_Social_Service_Browser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +112,8 @@
 		3FBA8E91A20285345B6541CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				157326BA0E6F8B7893ED5213 /* Pods-Social Service Browser.debug.xcconfig */,
-				1CB4B3373133FAED45A8D0B0 /* Pods-Social Service Browser.release.xcconfig */,
+				63EDC36119247014E0CC787C /* Pods-Social Service Browser.debug.xcconfig */,
+				F2DAF289F6556F8BE271A8A2 /* Pods-Social Service Browser.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -121,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C337443322ABBADEA59E68BD /* Pods_Social_Service_Browser.framework */,
+				0F14FA7A423670497525D791 /* Pods_SocialServiceBrowser.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,13 +227,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20250751F7539A400B96A97 /* Build configuration list for PBXNativeTarget "Social Service Browser" */;
 			buildPhases = (
-				B9247FF085E7B2C27500A904 /* [CP] Check Pods Manifest.lock */,
+				2B1A8A801F44FA116E80C288 /* [CP] Check Pods Manifest.lock */,
 				D202505F1F7539A400B96A97 /* Sources */,
 				D20250601F7539A400B96A97 /* Frameworks */,
 				D20250611F7539A400B96A97 /* Resources */,
-				CD4ECC540007F0C8EDDB03E7 /* [CP] Embed Pods Frameworks */,
-				7019945444DB436CA25E54B6 /* [CP] Copy Pods Resources */,
 				D29089F31F83C3800009899F /* Embed Frameworks */,
+				4F57CD7351BE20D544789BCC /* [CP] Embed Pods Frameworks */,
+				F45AAC8593906B341D0DE0B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,22 +327,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7019945444DB436CA25E54B6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B9247FF085E7B2C27500A904 /* [CP] Check Pods Manifest.lock */ = {
+		2B1A8A801F44FA116E80C288 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,7 +345,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD4ECC540007F0C8EDDB03E7 /* [CP] Embed Pods Frameworks */ = {
+		4F57CD7351BE20D544789BCC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,6 +365,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F45AAC8593906B341D0DE0B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social Service Browser/Pods-Social Service Browser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -387,7 +389,7 @@
 			files = (
 				D20250691F7539A400B96A97 /* ViewController.swift in Sources */,
 				D20250671F7539A400B96A97 /* AppDelegate.swift in Sources */,
-				D2A43EE91F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift in Sources */,
+				D20E2D331F867EBE00D7FF28 /* SocialServiceBrowserDropboxClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +549,7 @@
 		};
 		D20250761F7539A400B96A97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 157326BA0E6F8B7893ED5213 /* Pods-Social Service Browser.debug.xcconfig */;
+			baseConfigurationReference = 63EDC36119247014E0CC787C /* Pods-Social Service Browser.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -566,7 +568,7 @@
 		};
 		D20250771F7539A400B96A97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CB4B3373133FAED45A8D0B0 /* Pods-Social Service Browser.release.xcconfig */;
+			baseConfigurationReference = F2DAF289F6556F8BE271A8A2 /* Pods-Social Service Browser.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

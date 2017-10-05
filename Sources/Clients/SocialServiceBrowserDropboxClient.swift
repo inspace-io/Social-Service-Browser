@@ -117,15 +117,19 @@ extension DownloadRequestFile: SocialServiceBrowserOperationPerformable {
     }
 }
 
-class SocialServiceBrowserDropboxClient: SocialServiceBrowserClient {
-    var serviceName: String = "Dropbox"
+public class SocialServiceBrowserDropboxClient: SocialServiceBrowserClient {
+    public var serviceName: String = "Dropbox"
     
-    var filter: SocialServiceBrowserFilterType = .none
+    public var filter: SocialServiceBrowserFilterType = .none
     private var client: DropboxClient? {
         return DropboxClientsManager.authorizedClient
     }
     
-    func requestRootNode(with completion: @escaping (SocialServiceBrowserResult<SocialServiceBrowerNodeListResponse, Error>) -> Void) -> SocialServiceBrowserOperationPerformable? {
+    public init() {
+        
+    }
+    
+    public func requestRootNode(with completion: @escaping (SocialServiceBrowserResult<SocialServiceBrowerNodeListResponse, Error>) -> Void) -> SocialServiceBrowserOperationPerformable? {
         return client?.files.listFolder(path: "").response(completionHandler: { [weak self] response, error in
             if let error = error {
                 completion(SocialServiceBrowserResult.failure(NSError(domain: "SocialServiceBrowserDropboxClientDomain", code: -1, userInfo: [NSLocalizedDescriptionKey: error.description] as [String: Any])))
@@ -138,7 +142,7 @@ class SocialServiceBrowserDropboxClient: SocialServiceBrowserClient {
         }).request
     }
     
-    func requestChildren(for node: SocialServiceBrowerNode, withCompletion completion: @escaping (SocialServiceBrowserResult<SocialServiceBrowerNodeListResponse, Error>) -> Void) -> SocialServiceBrowserOperationPerformable? {
+    public func requestChildren(for node: SocialServiceBrowerNode, withCompletion completion: @escaping (SocialServiceBrowserResult<SocialServiceBrowerNodeListResponse, Error>) -> Void) -> SocialServiceBrowserOperationPerformable? {
         return client?.files.listFolder(path: node.path!).response(completionHandler: { [weak self] response, error in
             if let error = error {
                 completion(SocialServiceBrowserResult.failure(error))
@@ -151,7 +155,7 @@ class SocialServiceBrowserDropboxClient: SocialServiceBrowserClient {
         }).request
     }
     
-    func requestThumbnail(for node: SocialServiceBrowerNode, withCompletion completion: @escaping (SocialServiceBrowserResult<UIImage, Error>) -> Void) -> SocialServiceBrowserOperationPerformable? {
+    public func requestThumbnail(for node: SocialServiceBrowerNode, withCompletion completion: @escaping (SocialServiceBrowserResult<UIImage, Error>) -> Void) -> SocialServiceBrowserOperationPerformable? {
         let filePath = NSTemporaryDirectory().appending("/thumb_\(node.nodeName)")
         
         if let nodePath = node.path as NSString?, let image = UIImage(named: "page_white_\(nodePath.pathExtension)", in: Bundle(for: type(of: self)), compatibleWith: nil) {
@@ -209,7 +213,7 @@ class SocialServiceBrowserDropboxClient: SocialServiceBrowserClient {
         }
     }
     
-    func requestData(for node: SocialServiceBrowerNode, withCompletion: @escaping (SocialServiceBrowserResult<URL, Error>) -> Void) -> SocialServiceBrowserOperationPerformable? {
+    public func requestData(for node: SocialServiceBrowerNode, withCompletion: @escaping (SocialServiceBrowserResult<URL, Error>) -> Void) -> SocialServiceBrowserOperationPerformable? {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first
         guard let localPath = documentsPath?.appending("/\(node.nodeName)") else {
             return nil
