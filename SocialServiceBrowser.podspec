@@ -8,18 +8,24 @@ Pod::Spec.new do |s|
   s.authors  = 'Michał Zaborowski'
   s.source   = { :git => 'https://github.com/inspace-io/Social-Service-Browser.git', :tag => s.version.to_s }
   s.requires_arc = true
-
-  s.resource_bundle = { 
-  	'xibs' => ['Sources/**/*.{xib}'],
-  	'assets' => ['Sources/**/*.{xcassets}']  
-  }
-  s.source_files = 'Sources/*.{swift}'
   
   s.platform = :ios, '9.0'
   s.frameworks = 'UIKit', 'Foundation'
 
+  s.subspec 'Lite' do |ss|
+  	ss.resource_bundle = { 
+	  	'xibs' => ['Sources/**/*.{xib}'],
+	  	'assets' => ['Sources/**/*.{xcassets}']  
+  	}
+  	ss.source_files = 'Sources/*.{swift}'
+  end
+
   s.subspec 'Dropbox' do |ss|
-    ss.source_files = 'Sources/Clients/SocialServiceBrowserDropboxClient.swift'
+    ss.source_files = 'Sources/*.{swift}', 'Sources/Clients/SocialServiceBrowserDropboxClient.swift'
+    ss.resource_bundle = { 
+	  	'xibs' => ['Sources/**/*.{xib}'],
+	  	'assets' => ['Sources/**/*.{xcassets}']  
+  	}
     ss.dependency 'SwiftyDropbox'
   end
 

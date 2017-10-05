@@ -11,7 +11,7 @@ import SwiftyDropbox
 import Alamofire
 
 #if IMPORT_SOCIAL_BROWSER_FRAMEWORK
-import SocialServiceBrowser
+import SocialServiceBrowserFramework
 #endif
 
 extension Alamofire.Request: SocialServiceBrowserOperationPerformable {

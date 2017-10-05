@@ -15,8 +15,8 @@
 		D20250711F7539A400B96A97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D202506F1F7539A400B96A97 /* LaunchScreen.storyboard */; };
 		D20E2D331F867EBE00D7FF28 /* SocialServiceBrowserDropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A43EE81F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift */; };
 		D29089EB1F83C3800009899F /* SocialServiceBrowserFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D29089E91F83C3800009899F /* SocialServiceBrowserFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D29089EE1F83C3800009899F /* SocialServiceBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29089E71F83C3800009899F /* SocialServiceBrowser.framework */; };
-		D29089EF1F83C3800009899F /* SocialServiceBrowser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D29089E71F83C3800009899F /* SocialServiceBrowser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D29089EE1F83C3800009899F /* SocialServiceBrowserFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */; };
+		D29089EF1F83C3800009899F /* SocialServiceBrowserFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D29089F41F83C3910009899F /* SocialServiceBrowserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29089DE1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.swift */; };
 		D29089F51F83C3910009899F /* SocialServiceBrowserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202507F1F753FF100B96A97 /* SocialServiceBrowserResult.swift */; };
 		D29089F61F83C3910009899F /* SocialServiceBrowserOperationPerformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202507B1F753D2A00B96A97 /* SocialServiceBrowserOperationPerformable.swift */; };
@@ -50,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D29089EF1F83C3800009899F /* SocialServiceBrowser.framework in Embed Frameworks */,
+				D29089EF1F83C3800009899F /* SocialServiceBrowserFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +82,7 @@
 		D2775B001F7BDCDB00E2AD1E /* UIImageView+SocialServiceBrowserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SocialServiceBrowserClient.swift"; sourceTree = "<group>"; };
 		D29089DE1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserListCollectionViewCell.swift; sourceTree = "<group>"; };
 		D29089DF1F83A2D50009899F /* SocialServiceBrowserListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialServiceBrowserListCollectionViewCell.xib; sourceTree = "<group>"; };
-		D29089E71F83C3800009899F /* SocialServiceBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocialServiceBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocialServiceBrowserFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29089E91F83C3800009899F /* SocialServiceBrowserFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialServiceBrowserFramework.h; sourceTree = "<group>"; };
 		D29089EA1F83C3800009899F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A43EE81F793E99002122B4 /* SocialServiceBrowserDropboxClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceBrowserDropboxClient.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29089EE1F83C3800009899F /* SocialServiceBrowser.framework in Frameworks */,
+				D29089EE1F83C3800009899F /* SocialServiceBrowserFramework.framework in Frameworks */,
 				22BF0C27709D35F0D1083C4D /* Pods_Social_Service_Browser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				D20250631F7539A400B96A97 /* Social Service Browser.app */,
-				D29089E71F83C3800009899F /* SocialServiceBrowser.framework */,
+				D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,9 +245,9 @@
 			productReference = D20250631F7539A400B96A97 /* Social Service Browser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D29089E61F83C3800009899F /* SocialServiceBrowser */ = {
+		D29089E61F83C3800009899F /* SocialServiceBrowserFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D29089F01F83C3800009899F /* Build configuration list for PBXNativeTarget "SocialServiceBrowser" */;
+			buildConfigurationList = D29089F01F83C3800009899F /* Build configuration list for PBXNativeTarget "SocialServiceBrowserFramework" */;
 			buildPhases = (
 				D29089E21F83C3800009899F /* Sources */,
 				D29089E31F83C3800009899F /* Frameworks */,
@@ -258,9 +258,9 @@
 			);
 			dependencies = (
 			);
-			name = SocialServiceBrowser;
+			name = SocialServiceBrowserFramework;
 			productName = SocialServiceBrowserFramework;
-			productReference = D29089E71F83C3800009899F /* SocialServiceBrowser.framework */;
+			productReference = D29089E71F83C3800009899F /* SocialServiceBrowserFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +297,7 @@
 			projectRoot = "";
 			targets = (
 				D20250621F7539A400B96A97 /* Social Service Browser */,
-				D29089E61F83C3800009899F /* SocialServiceBrowser */,
+				D29089E61F83C3800009899F /* SocialServiceBrowserFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +415,7 @@
 /* Begin PBXTargetDependency section */
 		D29089ED1F83C3800009899F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D29089E61F83C3800009899F /* SocialServiceBrowser */;
+			target = D29089E61F83C3800009899F /* SocialServiceBrowserFramework */;
 			targetProxy = D29089EC1F83C3800009899F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -656,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D29089F01F83C3800009899F /* Build configuration list for PBXNativeTarget "SocialServiceBrowser" */ = {
+		D29089F01F83C3800009899F /* Build configuration list for PBXNativeTarget "SocialServiceBrowserFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D29089F11F83C3800009899F /* Debug */,
