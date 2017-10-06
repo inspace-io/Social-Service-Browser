@@ -12,21 +12,12 @@ Pod::Spec.new do |s|
   s.platform = :ios, '9.0'
   s.frameworks = 'UIKit', 'Foundation'
 
-  s.subspec 'Lite' do |ss|
-  	ss.resource_bundle = { 
+  s.resource_bundle = { 
 	  	'xibs' => ['Sources/**/*.{xib}'],
 	  	'assets' => ['Sources/**/*.{xcassets}']  
   	}
-  	ss.source_files = 'Sources/*.{swift}'
-  end
+  s.source_files = 'Sources/*.{swift}'
 
-  s.subspec 'Dropbox' do |ss|
-    ss.source_files = 'Sources/*.{swift}', 'Sources/Clients/SocialServiceBrowserDropboxClient.swift'
-    ss.resource_bundle = { 
-	  	'xibs' => ['Sources/**/*.{xib}'],
-	  	'assets' => ['Sources/**/*.{xcassets}']  
-  	}
-    ss.dependency 'SwiftyDropbox'
-  end
+
 
 end

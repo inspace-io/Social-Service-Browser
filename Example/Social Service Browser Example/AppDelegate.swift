@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Enter your app key here and in Info.plist file
-        let appKey = "shdlrsw3t6j6twy"
+        let appKey = "YOUR_APP_KEY"
         DropboxClientsManager.setupWithAppKey(appKey)
         assert(appKey != "YOUR_APP_KEY")
         
